@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 
 type Props = {};
 
-const FsMeridianMedium = localFont({
+const fsMeridianMedium = localFont({
   src: "../../public/fonts/Fs_Meridian/FSMeridianTrial-Medium.otf",
 });
 
@@ -25,7 +25,7 @@ const poppins = Poppins({
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-row-reverse items-end text-white">
+    <div className="lg:flex flex-row-reverse items-center justify-between text-white">
       <div>
         <div className="flex items-end justify-between pt-[10px] md:pt-[14px] lg:items-center lg:justify-center lg:gap-[27px] lg:pt-[71px]">
           <div className="relative h-[123.87px] w-[194.89px] md:h-[289px] md:w-[455px] lg:h-[218px] lg:w-[343px]">
@@ -55,11 +55,12 @@ const Hero = (props: Props) => {
           alt="hero bottom image"
           width={484}
           height={449}
+          className="hidden lg:block"
         />
       </div>
       <div>
         <h1
-          className={`${FsMeridianMedium.className} mt-[28px] text-[36px] font-medium leading-[44px] md:mt-[45px] md:text-[80px] md:leading-[96px] lg:mt-0 lg:max-w-[614px]`}
+          className={`${fsMeridianMedium.className} mt-[28px] text-[36px] font-medium leading-[44px] md:mt-[45px] md:text-[80px] md:leading-[96px] lg:mt-0 lg:max-w-[614px]`}
         >
           Bring the power of AI to your conversations
         </h1>
