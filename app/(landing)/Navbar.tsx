@@ -18,7 +18,7 @@ const Navbar = (props: Props) => {
       <Logo />
       <div
         onClick={() => setMobileMenuState((value) => !value)}
-        className="w-[46px] h-[46px] relative lg:hidden cursor-pointer"
+        className="relative h-[46px] w-[46px] cursor-pointer lg:hidden"
       >
         <Image src={"/assets/hamburger_menu.svg"} alt="hamburger_menu" fill />
       </div>
@@ -26,11 +26,12 @@ const Navbar = (props: Props) => {
         <MobileMenu setMobileMenuState={setMobileMenuState} />
       )}
       <div
-        className={`hidden lg:flex items-center gap-[73px] ${poppins.className} text-[18px] leading-[27px] text-white`}
+        className={`hidden items-center gap-[73px] lg:flex ${poppins.className} text-[18px] leading-[27px] text-white`}
       >
         {["Blog", "Contact us", "Sign in"].map((link) => (
           <Link
-            className="relative before:absolute before:content-[''] before:w-full before:h-[2px] before:bg-white before:-bottom-1 before:scale-0 hover:before:scale-100 before:origin-center before:duration-300"
+            key={link}
+            className="relative before:absolute before:-bottom-1 before:h-[2px] before:w-full before:origin-center before:scale-0 before:bg-white before:duration-300 before:content-[''] hover:before:scale-100"
             href=""
           >
             {link}
