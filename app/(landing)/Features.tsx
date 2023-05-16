@@ -11,7 +11,7 @@ const fsMeridianMedium = localFont({
 
 const Features = (props: Props) => {
   return (
-    <div className="pt-[47px] md:pt-[65px] lg:pt-[178px] lg:flex flex-row-reverse items-center justify-between">
+    <div className="pt-[47px] md:pt-[65px] lg:pt-[118px] lg:flex flex-row-reverse items-center justify-between">
       <div>
         <h2
           className={`text-[36px] leading-[44px] text-white md:text-[60px] md:leading-[63px] ${fsMeridianMedium.className} max-w-[259px] md:max-w-full lg:max-w-[506px]`}
