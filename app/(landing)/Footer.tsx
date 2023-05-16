@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import localFont from "next/font/local";
+import Newsletter from "./Newsletter";
 
 type Props = {};
 
@@ -19,9 +20,10 @@ const generalSansRegular = localFont({
 
 const Footer = (props: Props) => {
   return (
-    <div className="items-start gap-[199px] bg-black px-[21px] pb-[27px] pt-[276px] text-[18px] leading-[16px] md:flex md:px-[55px] md:pb-[123px] md:pt-[355px] md:text-[22px] md:leading-[16px] lg:pb-[95px] lg:pt-[335px] lg:text-[16px]">
+    <div className="relative items-start gap-[199px] bg-black px-[21px] pb-[27px] pt-[276px] text-[18px] leading-[16px] md:flex md:flex-col md:gap-0 md:px-[55px] md:pb-[123px] md:pt-[355px] md:text-[22px] md:leading-[16px] lg:flex-row lg:gap-[100px] lg:pb-[95px] lg:pt-[335px] lg:text-[16px]">
+      <Newsletter />
       <Logo />
-      <div className="items-start gap-[190px] md:flex md:pt-[64px] lg:justify-between lg:gap-[100px] lg:pt-0">
+      <div className="items-start gap-[190px] md:flex md:gap-[150px] md:pt-[64px] lg:justify-between lg:gap-[100px] lg:pt-0">
         <div
           className={`grid grid-cols-2 grid-rows-3 gap-x-[40px] gap-y-[37px] pt-[37px] text-white md:grid-cols-1 md:grid-rows-1 md:pt-0  ${generalSansMedium.className}`}
         >

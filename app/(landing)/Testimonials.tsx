@@ -10,7 +10,7 @@ const fsMeridianMedium = localFont({
 
 const Testimonials = (props: Props) => {
   return (
-    <div className="relative mt-[60px] px-[21px] pb-[142px] text-white md:mt-[122px] md:px-[55px] md:pb-[347px] md:pr-0 lg:mt-[215px] lg:w-full lg:pb-[262px]">
+    <div className="relative mt-[60px] px-[21px] pb-[202px] text-white md:mt-[122px] md:px-[55px] md:pb-[347px] md:pr-0 lg:mt-[215px] lg:w-full lg:pb-[262px]">
       <h2
         className={`max-w-[187px] text-[36px] leading-[44px] md:max-w-[592px] md:text-[60px] md:leading-[63px] ${fsMeridianMedium.className}`}
       >
