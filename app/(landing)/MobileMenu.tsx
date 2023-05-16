@@ -19,10 +19,10 @@ const generalSansMedium = localFont({
 
 const MobileMenu = ({ setMobileMenuState }: Props) => {
   return (
-    <div className="absolute inset-0 bg-[#111826] z-20">
+    <div className="absolute inset-0 z-20 bg-[#111826]">
       <div
         onClick={() => setMobileMenuState((value: boolean) => !value)}
-        className="flex items-center justify-end mt-[21px] mr-[21px]"
+        className="mr-[21px] mt-[21px] flex items-center justify-end"
       >
         <AiOutlineClose size={36} color="white" />
       </div>

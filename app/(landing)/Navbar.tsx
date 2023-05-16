@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
   const [mobileMenuState, setMobileMenuState] = useState<boolean>(false);
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-[21px] md:px-[55px]">
       <Logo />
       <div
         onClick={() => setMobileMenuState((value) => !value)}

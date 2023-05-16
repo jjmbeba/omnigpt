@@ -25,7 +25,7 @@ const poppins = Poppins({
 
 const Hero = (props: Props) => {
   return (
-    <div className="lg:flex flex-row-reverse items-center justify-between text-white">
+    <div className="flex-row-reverse items-center justify-between px-[21px] text-white md:px-[55px] lg:flex">
       <div>
         <div className="flex items-end justify-between pt-[10px] md:pt-[14px] lg:items-center lg:justify-center lg:gap-[27px] lg:pt-[71px]">
           <div className="relative h-[123.87px] w-[194.89px] md:h-[289px] md:w-[455px] lg:h-[218px] lg:w-[343px]">

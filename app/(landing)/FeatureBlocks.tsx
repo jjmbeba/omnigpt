@@ -29,7 +29,7 @@ const FeatureBlocks = (props: Props) => {
       {features.map((feature, index) => (
         <div
           key={feature.title}
-          className={`h-auto w-full rounded-[10px] pl-[22px] lg:pl-[27px] pr-[33px] md:pl-[35px]  ${
+          className={`h-auto w-full rounded-[10px] pl-[22px] pr-[33px] md:pl-[35px] lg:pl-[27px]  ${
             index === 0
               ? "bg-white pb-[25px] text-black"
               : "bg-[rgba(255,255,255,0.2)] text-white"
@@ -37,13 +37,13 @@ const FeatureBlocks = (props: Props) => {
         >
           <div className="flex flex-col">
             <h2
-              className={`${generalSansMedium.className} text-[20px] lg:text-[16px] leading-[78px]`}
+              className={`${generalSansMedium.className} text-[20px] leading-[78px] lg:text-[16px]`}
             >
               {feature.title}
             </h2>
             {feature.content && (
               <p
-                className={`${generalSansRegular.className} text-[18px] lg:text-[14px] leading-[24px] lg:leading-[19px]`}
+                className={`${generalSansRegular.className} text-[18px] leading-[24px] lg:text-[14px] lg:leading-[19px]`}
               >
                 {feature.content}
               </p>
