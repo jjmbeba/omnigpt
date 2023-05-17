@@ -29,9 +29,9 @@ const MobileMenu = ({ setMobileMenuState }: Props) => {
       <div
         className={`flex flex-col items-center justify-center gap-[31px] pt-[104px] ${generalSansMedium.className} text-[30px] leading-[63px] text-white`}
       >
-        <Link href="">Blog</Link>
-        <Link href="">Contact us</Link>
-        <Link href="">Sign in</Link>
+        <Link onClick={() => setMobileMenuState((value: boolean) => !value)} href="/blog">Blog</Link>
+        <Link onClick={() => setMobileMenuState((value: boolean) => !value)} href="/contact">Contact us</Link>
+        <Link href="/signIn" onClick={() => setMobileMenuState((value: boolean) => !value)}>Sign in</Link>
       </div>
     </div>
   );

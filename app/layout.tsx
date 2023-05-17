@@ -1,4 +1,6 @@
 import './globals.css'
+import Navbar from "./(landing)/Navbar";
+
 
 
 export const metadata = {
@@ -13,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-[#111826]  pt-[26px] md:pt-[47px] overflow-x-hidden scroll-smooth'>
+      <Navbar/>
+        {children}</body>
     </html>
   )
 }

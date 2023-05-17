@@ -6,8 +6,7 @@ import Testimonials from "./(landing)/Testimonials";
 
 export default function Home() {
   return (
-    <div className="bg-[#111826] h-auto pt-[26px] md:pt-[47px] overflow-x-hidden scroll-smooth">
-      <Navbar />
+    <div>
       <Hero/>
       <Features/>
       <Testimonials/>

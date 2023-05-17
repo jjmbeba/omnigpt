@@ -28,13 +28,13 @@ const Navbar = (props: Props) => {
       <div
         className={`hidden items-center gap-[73px] lg:flex ${poppins.className} text-[18px] leading-[27px] text-white`}
       >
-        {["Blog", "Contact us", "Sign in"].map((link) => (
+        {[{title:"Blog", link:"blog"}, {title:"Contact us", link:"contact"}, {title:"Sign in", link:"signIn"}].map(({title, link}) => (
           <Link
             key={link}
             className="relative before:absolute before:-bottom-1 before:h-[2px] before:w-full before:origin-center before:scale-0 before:bg-white before:duration-300 before:content-[''] hover:before:scale-100"
-            href=""
+            href={`/${link}`}
           >
-            {link}
+            {title}
           </Link>
         ))}
       </div>
